@@ -48,8 +48,6 @@ JE vowelchar
 cmp bl,55h        ;U
 JE vowelchar
 
-cmp bl,59h      ;Y
-JE vowelchar
 
 cmp bl,61h      ;a
 JE vowelchar
@@ -66,8 +64,6 @@ JE vowelchar
 cmp bl,75h     ;u
 JE vowelchar
 
-cmp bl,79h     ;y
-JE vowelchar
 
 JMP notvowelchar     ;else characters
 
