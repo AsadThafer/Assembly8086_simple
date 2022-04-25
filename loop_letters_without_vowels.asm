@@ -1,3 +1,5 @@
+;Write a program to print the characters from a to z except ( a, e, i, o, u ) using Loop instruction.
+
 .model small
 .data 
 newline db 0dh,0ah,'$'
@@ -24,9 +26,6 @@ je move
 cmp bl,'u'         ;compare with u (vowel)
 je move 
  
- 
- 
- 
 mov dl,bl  
 mov ah,02h   ;print letter
 int 21h
@@ -49,5 +48,3 @@ jmp start
 
 main endp
 end main 
-
-;Write a program to print the characters from a to z except ( a, e, i, o, u ) using Loop instruction. 
