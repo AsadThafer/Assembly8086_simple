@@ -1,6 +1,6 @@
-.model small
-.stack 100h 
+;Write a program that check number even or odd 
 
+.model small
 .data
 start db 'please enter your number : $'
 evennum db 'This is an even number $'
@@ -35,7 +35,6 @@ div bl
 cmp ah,01h         ;cmp ah with 1 to check if it is an odd
 JE oddnumber       ;if ah=1 then odd
 JNE evennumber     ;if ah=0 then even
-
        
 notnumber:           ;not a number
 lea dx,newline
@@ -47,7 +46,6 @@ mov ah,09h
 int 21h
 jmp exit
 
-
 oddnumber:
 lea dx,newline      ; odd number
 mov ah,09h
@@ -57,7 +55,6 @@ lea dx,oddnum
 mov ah,09h
 int 21h
 jmp exit
-
 
 evennumber:
 lea dx,newline
@@ -73,9 +70,6 @@ jmp exit
 exit:
 mov ah,4Ch          ;exit
 int 21h
-     
-
+   
 main endp
 end main
-
-;Write a program that check number even or odd 
