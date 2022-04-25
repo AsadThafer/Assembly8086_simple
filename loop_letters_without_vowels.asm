@@ -12,7 +12,6 @@ mov bl,'b'         ; first letter to start with
  
 start:
  
- 
 cmp bl,'e'         ;compare with e (vowel)
 je move
  
@@ -38,7 +37,6 @@ lea dx,newline   ;new line
 mov ah,09h
 int 21h
  
-
  
 loop start
  
@@ -47,14 +45,9 @@ int 21h
  
 move:
 inc bl
-jmp start 
- 
- 
- 
- 
+jmp start  
 
 main endp
 end main 
 
-;Write a program to print the characters 
-;from a to z except ( a, e, i, o, u ) using Loop instruction. 
+;Write a program to print the characters from a to z except ( a, e, i, o, u ) using Loop instruction. 
