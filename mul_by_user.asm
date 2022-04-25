@@ -28,7 +28,6 @@ mov dl,'='      ;print =
 mov ah,02h
 int 21h  
 
-
 mov ax,0000h
 
 mov al,cl      ;moved second number to al
@@ -46,3 +45,5 @@ int 21h                    ;note : the full answer saved in bx
 
 main endp
 end main
+
+;Write a program allow user to enter two number and print Multiplication
