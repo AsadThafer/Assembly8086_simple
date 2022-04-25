@@ -7,7 +7,6 @@ str2 db 'Your character is in LowerCase'  , '$'
 str3 db 'its UpperCase is  : ' ,'$'
 str4 db 'Your character is in UpperCase','$'
 str5 db 'its LowerCase is  : ' , '$'  
-
 newline db 0dh,0ah,'$'
 
 .code                               
@@ -94,3 +93,5 @@ int 21h
 
 main endp
 end main
+
+; Write a program that get a character and Convert from upper to lower if it upper or convert form lower to upper if it lower using and_or
