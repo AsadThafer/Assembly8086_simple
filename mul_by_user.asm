@@ -1,7 +1,7 @@
-.model small
-.stack 100h
-.data
+;Write a program allow user to enter two number and print Multiplication
 
+.model small
+.data
 .code
 main proc
     mov ax,@data                
@@ -45,5 +45,3 @@ int 21h                    ;note : the full answer saved in bx
 
 main endp
 end main
-
-;Write a program allow user to enter two number and print Multiplication
