@@ -25,9 +25,7 @@ int 21h
 
 
 
-
-
-
-
 main endp
 end main
+
+;Simple division in Assembly
