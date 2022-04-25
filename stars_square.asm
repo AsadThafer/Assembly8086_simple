@@ -1,3 +1,4 @@
+;print a square of stars 5*4
 .model small
 .stack 100h
 .data
@@ -26,11 +27,6 @@ mov cx,w
 dec w
 
 loop loop1
-
     
 main endp
 end main 
-
-;  note:
-;  max of 9 decimal can be done because it prints from 
-;  31h to 39h only can be modified in another method
