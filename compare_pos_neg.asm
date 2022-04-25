@@ -18,12 +18,8 @@ lea dx,start
 mov ah,09h
 int 21h 
 
-
 mov ah,01h   ;enter number
 int 21h 
-
-
-
 
 mov bl,al
 sub bl,30h 
@@ -55,10 +51,9 @@ mov ah,09h
 int 21h
 jmp exit
 
-
-
-
-
-
 main endp
 end main
+
+;Write a program that allow user to enter a number and print positive, negative or Zero ?
+
+
