@@ -1,7 +1,7 @@
+;Read a character from user and Display it on the screen
+
 .model small
-.stack 100h
 .data
- 
 str1 db 'Enter a character : ','$'
 str2 db 'Your Character is : ' , '$'
 newline db 0dh,0ah,'$'
@@ -34,8 +34,5 @@ mov dl,bl
 mov ah,02h   ; print char
 int 21h   
 
-
 main endp
 end main
-
-;Read a character from user and Display it on the screen
