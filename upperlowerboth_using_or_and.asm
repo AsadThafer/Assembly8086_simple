@@ -1,7 +1,7 @@
-.model small
-.stack 100h
-.data
+; Write a program that get a character and Convert from upper to lower if it upper or convert form lower to upper if it lower using and_or
 
+.model small
+.data
 str1 db 'Enter Your Character : ' , '$'
 str2 db 'Your character is in LowerCase'  , '$'
 str3 db 'its UpperCase is  : ' ,'$'
@@ -49,8 +49,6 @@ lea dx,newline   ;newline
 mov ah,09h
 int 21h
 
-
-
 lea dx,str3        ; string
 mov ah,09h
 int 21h
@@ -73,8 +71,6 @@ lea dx,newline   ;newline
 mov ah,09h
 int 21h
 
-
-
 lea dx,str5        ; string
 mov ah,09h
 int 21h
@@ -85,13 +81,9 @@ int 21h
 
 jmp end
 
-
 end:
 mov ax,4ch
 int 21h
 
-
 main endp
 end main
-
-; Write a program that get a character and Convert from upper to lower if it upper or convert form lower to upper if it lower using and_or
