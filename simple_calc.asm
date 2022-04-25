@@ -1,12 +1,9 @@
 .model small
 .stack 100h
 .data
- 
-
 newline db 0dh,0ah,'$'
 
 .code                               
-
 main proc
     mov ax,@data
     mov ds,ax
@@ -39,9 +36,7 @@ mov dl,cl
 mov ah,02h     ; print the answer
 int 21h
 
-
-
-
-
 main endp
 end main
+
+;Simple calculator
