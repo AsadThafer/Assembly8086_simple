@@ -1,6 +1,6 @@
 ;print a square of stars 5*4
+
 .model small
-.stack 100h
 .data
 l dw 5
 w dw 4
