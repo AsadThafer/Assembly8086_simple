@@ -3,11 +3,9 @@
 
 .data
 start db 'please enter your letter : $'
-
 vowel db 'This is a Vowel $'
 notvowel db 'This is not a Vowel $'
 notchar db 'This is not a char $'   
-
 newline db 0dh,0ah,'$'
 
 .code
@@ -67,8 +65,6 @@ JE vowelchar
 
 JMP notvowelchar     ;else characters
 
-
-
 notvowelchar: 
 lea dx,newline
 mov ah,09h
@@ -109,3 +105,5 @@ int 21h
 
 main endp
 end main
+
+;Write a program that allow user to Enter Character And print vowel or Not (upper and lower Case)
