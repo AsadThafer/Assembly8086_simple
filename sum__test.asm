@@ -1,5 +1,6 @@
+;What is the result of this expression? 5 - 2 + 3 * 6 / 2  Write an assembly instructions for computing the result
+
 .model small
-.stack 100h
 .data
 
 .code
@@ -32,8 +33,5 @@ mov dl,bl
 mov ah,2h
 int 21h
 
-
 main endp
 end main
-
-;What is the result of this expression? 5 - 2 + 3 * 6 / 2  Write an assembly instructions for computing the result
