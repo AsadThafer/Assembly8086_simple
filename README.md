@@ -1,6 +1,6 @@
 # Assembly8086_simple
 simple assembly codes running on emu8086 in .asm format
-
+ aaa_aas_aam_aad.asm : use aaa(Adjust After Addition),aas(Adjust After subtraction),aam(Adjust After multiplication),aad(Adjust before division) .. inputs in code
  compare_pos_neg.asm : Write a program that allow user to enter a number and print positive, negative or Zero ?
  
  vowelchecker.asm :Write a program that allow user to Enter Character And print vowel or Not (upper and lower Case)
