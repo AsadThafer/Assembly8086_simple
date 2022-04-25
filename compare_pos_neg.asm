@@ -1,6 +1,6 @@
-.model small
-.stack 100h 
+;Write a program that allow user to enter a number and print positive, negative or Zero ?
 
+.model small 
 .data
 start db 'please enter your integer : $'
 newline db 0dh,0ah,'$'
@@ -53,7 +53,3 @@ jmp exit
 
 main endp
 end main
-
-;Write a program that allow user to enter a number and print positive, negative or Zero ?
-
-
