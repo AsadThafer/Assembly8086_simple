@@ -1,4 +1,4 @@
-;assembly code to use aaa(Adjust After Addition),aas(Adjust After subtraction),aam(Adjust After multiplication),aad(Adjust before division) 
+;assembly code to use aaa(Adjust After Addition),aas(Adjust After subtraction),aam(Adjust After multiplication),aad(Adjust before division) .. inputs in code
 .model small
 .data
 str1 db 'this is the summation answer : ' ,'$'
