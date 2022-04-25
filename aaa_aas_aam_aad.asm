@@ -1,7 +1,6 @@
+;assembly code to use aaa(Adjust After Addition),aas(Adjust After subtraction),aam(Adjust After multiplication),aad(Adjust before division) 
 .model small
-.stack 100h
 .data
-
 str1 db 'this is the summation answer : ' ,'$'
 str2 db 'this is the subtraction answer : ' ,'$'
 str3 db 'this is the Multiplication answer : ' ,'$'
@@ -28,20 +27,15 @@ lea dx,str1
 mov ah,09h
 int 21h
 
-
-
 mov dl,ch
 mov ah,02h
 int 21h 
-
 
 mov dl,cl
 mov ah,02h
 int 21h
 
-
 subtraction :
-
 
 lea dx,newline
 mov ah,09h
@@ -71,8 +65,6 @@ mov dl,bl
 mov ah,02h
 int 21h
 
-
-
 multiplication:
 
 lea dx,newline
@@ -82,8 +74,6 @@ int 21h
 lea dx,str3
 mov ah,09h
 int 21h
-
-
 
 mov ax,0000h
 
@@ -98,13 +88,9 @@ mov bx,ax
 
 add bx,3030h
 
-
-
 mov dl,bh
 mov ah,02h
 int 21h
-
-
 
 mov dl,bl
 mov ah,02h
@@ -131,13 +117,9 @@ mov bx,0000h
 mov bx,ax
 add bx,3030h
 
-
-
 mov dl,bh
 mov ah,02h
 int 21h
-
-
 
 mov dl,bl
 mov ah,02h
