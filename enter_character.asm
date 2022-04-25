@@ -37,3 +37,5 @@ int 21h
 
 main endp
 end main
+
+;Read a character from user and Display it on the screen
