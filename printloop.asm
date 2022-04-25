@@ -1,5 +1,6 @@
+;Write a program to print the numbers from 1 to 9 using Loop instruction.
+
 .model small
-.stack 100h
 .data
 newline db 0dh,0ah,'$'
 .code
@@ -20,13 +21,8 @@ lea dx,newline  ;print newline
 mov ah,9h
 int 21h
 loop print      ;loop of printing
-
-    
+   
 main endp
 end main 
 
-;  note:
-;  max of 9 decimal can be done because it prints from 
-;  31h to 39h only can be modified in another method
-
-;Write a program to print the numbers from 1 to 9 using Loop instruction.
+;  max of 9 decimal can be done because it prints from 31h to 39h only can be modified in another method
