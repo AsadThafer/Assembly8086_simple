@@ -1,6 +1,6 @@
-.model small
-.stack 100h 
+;Write a program that allow user to Enter Character And print vowel or Not (upper and lower Case)
 
+.model small
 .data
 start db 'please enter your letter : $'
 vowel db 'This is a Vowel $'
@@ -18,10 +18,8 @@ lea dx,start
 mov ah,09h    ;print start
 int 21h 
 
-
 mov ah,01h   ;enter your char
 int 21h 
-
 
 mov bl,al
 
@@ -62,7 +60,6 @@ JE vowelchar
 cmp bl,75h     ;u
 JE vowelchar
 
-
 JMP notvowelchar     ;else characters
 
 notvowelchar: 
@@ -75,7 +72,6 @@ mov ah,09h
 int 21h
 jmp exit
 
-
 vowelchar:
 lea dx,newline
 mov ah,09h
@@ -85,8 +81,6 @@ lea dx,vowel
 mov ah,09h
 int 21h
 jmp exit
-
-
 
 notcharacter:
 lea dx,newline
@@ -98,12 +92,9 @@ mov ah,09h
 int 21h
 jmp exit
 
-
 exit:
 mov ah,4Ch
 int 21h
 
 main endp
 end main
-
-;Write a program that allow user to Enter Character And print vowel or Not (upper and lower Case)
