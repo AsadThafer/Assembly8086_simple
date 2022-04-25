@@ -1,7 +1,7 @@
-.model small
-.stack 100h
-.data
+;Simple division in Assembly
 
+.model small
+.data
 str1 dw '','$' 
 newline db 0dh,0ah,'$'
 
@@ -23,9 +23,5 @@ mov dx,ax
 mov ah,02h
 int 21h
 
-
-
 main endp
 end main
-
-;Simple division in Assembly
