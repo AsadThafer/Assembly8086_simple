@@ -1,3 +1,4 @@
+;Write a program to print the even numbers from 0 to 9 using Loop instruction 
 .model small
 .data 
 newline db 0dh,0ah,'$'
@@ -9,7 +10,6 @@ main proc
 
 mov cx,5d        ; number of outputs in loop in decimal
 mov bl,0d         ; number to start with start in decimal
-
  
 start:
 mov ax,0000h
@@ -44,5 +44,3 @@ loop start  ;start of the loop
   
 main endp
 end main 
-
-;Write a program to print the even numbers from 0 to 9 using Loop instruction 
