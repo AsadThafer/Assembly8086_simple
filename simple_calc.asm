@@ -1,5 +1,6 @@
+;Simple calculator
+
 .model small
-.stack 100h
 .data
 newline db 0dh,0ah,'$'
 
@@ -18,7 +19,6 @@ mov dx,'+'     ; print +
 mov ah,02h
 int 21h
 
-
 mov ah,01h  ; enter second number
 int 21h
 
@@ -27,7 +27,6 @@ mov cl,al   ;save the number
 mov dx,'='     ; print =
 mov ah,02h
 int 21h
-
 
 add cl,bl     ; add operation
 sub cl,30h    ; convert to number
@@ -38,5 +37,3 @@ int 21h
 
 main endp
 end main
-
-;Simple calculator
