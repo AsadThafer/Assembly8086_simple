@@ -22,9 +22,6 @@ cmp ah,01h  ;check if odd
 jne even
 je odd 
  
- 
-
- 
 mov ah,4ch ;exit
 int 21h
  
@@ -42,14 +39,10 @@ inc bl
 lea dx,newline   ;new line
 mov ah,09h
 int 21h
- 
 
- 
 loop start  ;start of the loop
   
-
 main endp
 end main 
 
-;Write a program to print the even numbers 
-;from 0 to 9 using Loop instruction 
+;Write a program to print the even numbers from 0 to 9 using Loop instruction 
