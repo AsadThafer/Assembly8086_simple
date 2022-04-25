@@ -94,3 +94,5 @@ int 21h
 
 main endp
 end main
+
+; Write a program that get a character and Convert from upper to lower if it upper or convert form lower to upper if it lower using xor
